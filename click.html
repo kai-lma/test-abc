@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        overflow: hidden;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+      }
+      #test-btn {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 999;
+        padding: 20px 40px;
+        font-size: 24px;
+        background: red;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button
+      id="test-btn"
+      onclick="
+        this.style.background = 'green';
+        this.textContent = 'CLICKED!';
+      "
+    >
+      CLICK ME
+    </button>
+  </body>
+</html>
